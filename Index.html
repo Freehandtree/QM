@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Maze</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="passwordContainer">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Enter</button>
+    </div>
+
+    <div id="mainContainer" style="display: none;">
+        <div id="gridContainer">
+            <div class="grid" id="grid"></div>
+        </div>
+        <div id="riddleContainer">
+            <p id="riddleText">What has keys but can't open locks?</p>
+            <input type="text" id="riddleAnswer">
+            <button onclick="checkAnswer()">Submit Answer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
