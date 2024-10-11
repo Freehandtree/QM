@@ -1,5 +1,5 @@
 const password = "liebdichmehr123";  // Password you specified
-const correctAnswer = "B";  // The correct answer for the riddle (room B)
+const correctAnswer = "b";  // The correct answer for the riddle (room B)
 
 function checkPassword() {
     const userPassword = document.getElementById("password").value;
