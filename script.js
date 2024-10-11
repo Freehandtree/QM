@@ -9,7 +9,7 @@ function checkPassword() {
         document.getElementById("passwordContainer").style.display = "none";
         document.getElementById("mainContainer").style.display = "block";
     } else if (userPassword === password2) {
-        window.location.href = "secondpage.html";  // Redirect to a different page
+        window.location.href = "PSW2.html";  // Redirect to a different page
     } else {
         alert("Incorrect password!");
     }
@@ -19,7 +19,7 @@ function checkAnswer() {
     const userAnswer = document.getElementById("riddleAnswer").value.toLowerCase();
     if (userAnswer === correctAnswer) {
         alert("Correct! Redirecting...");
-        window.location.href = "reveal.html";  // Redirect to reveal page
+        window.location.href = "CP1.html";  // Redirect to reveal page
     } else {
         alert("Incorrect. Try again!");
     }
