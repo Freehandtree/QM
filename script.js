@@ -1,11 +1,15 @@
-const password = "liebdichmehr123";  // Password you specified
+const password1 = "liebdichmehr123";  // First password for the riddle page
+const password2 = "zweiterpasswort";  // Second password for a different page
 const correctAnswer = "b";  // The correct answer for the riddle (room B)
 
 function checkPassword() {
     const userPassword = document.getElementById("password").value;
-    if (userPassword === password) {
+
+    if (userPassword === password1) {
         document.getElementById("passwordContainer").style.display = "none";
         document.getElementById("mainContainer").style.display = "block";
+    } else if (userPassword === password2) {
+        window.location.href = "secondpage.html";  // Redirect to a different page
     } else {
         alert("Incorrect password!");
     }
@@ -14,7 +18,8 @@ function checkPassword() {
 function checkAnswer() {
     const userAnswer = document.getElementById("riddleAnswer").value.toLowerCase();
     if (userAnswer === correctAnswer) {
-        alert("Correct! Room B is her bedroom.");
+        alert("Correct! Redirecting...");
+        window.location.href = "reveal.html";  // Redirect to reveal page
     } else {
         alert("Incorrect. Try again!");
     }
