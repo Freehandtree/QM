@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-#passwordContainer, #mainContainer {
+#passwordContainer, #mainContainer, #contentContainer {
     text-align: center;
 }
 
@@ -26,4 +26,8 @@ input[type="text"], input[type="password"] {
 button {
     padding: 10px 20px;
     cursor: pointer;
+}
+
+p {
+    font-size: 18px;
 }
