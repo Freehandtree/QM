@@ -1,5 +1,5 @@
 const password = "liebdichmehr123";  // Password you specified
-const correctAnswer = "g";  // The correct answer for the riddle (room G)
+const correctAnswer = "B";  // The correct answer for the riddle (room B)
 
 function checkPassword() {
     const userPassword = document.getElementById("password").value;
@@ -14,7 +14,7 @@ function checkPassword() {
 function checkAnswer() {
     const userAnswer = document.getElementById("riddleAnswer").value.toLowerCase();
     if (userAnswer === correctAnswer) {
-        alert("Correct! Room G is her bedroom.");
+        alert("Correct! Room B is her bedroom.");
     } else {
         alert("Incorrect. Try again!");
     }
