@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contentContainer">
+        <h2>Secret Message</h2>
+        <p id="message" style="display: none;">Congratulations! You have revealed the hidden message.</p>
+        <p id="tooEarly">Sorry, the message will be available after <strong>October 12, 2024</strong>.</p>
+    </div>
+
+    <script>
+        function checkDate() {
+            const today = new Date();
+            const revealDate = new Date('2024-10-12');
+
+            if (today >= revealDate) {
+                document.getElementById("message").style.display = "block";
+                document.getElementById("tooEarly").style.display = "none";
+            }
+        }
+
+        // Check the date when the page loads
+        window.onload = checkDate;
+    </script>
+</body>
+</html>
