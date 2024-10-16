@@ -8,15 +8,39 @@
 </head>
 <body>
     <div id="contentContainer">
-        <h2>Secret Message</h2>
+        <h2>Checkpoint</h2>
         <p id="message" style="display: none;">Congratulations! You have revealed the hidden message.</p>
-        <p id="tooEarly">Sorry, the message will be available after <strong>October 12, 2024</strong>.</p>
+        <p id="tooEarly">Jetzt gehts um Geduld</p>
+        <div id="countdown">Berechnen...</div>
+
+    <script>
+        // Set the target date and time you're counting down to
+        const targetDate = new Date('October 24, 2024 00:00:00').getTime();
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            // Calculate remaining time in seconds
+            const secondsLeft = Math.floor(timeLeft / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = secondsLeft + " sekunden übrig";
+
+            // If the countdown is over, display a message
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Time's up!";
+            }
+        }, 1000);
+    </script>
     </div>
 
     <script>
         function checkDate() {
             const today = new Date();
-            const revealDate = new Date('2024-10-12');
+            const revealDate = new Date('2024-10-24');
 
             if (today >= revealDate) {
                 document.getElementById("message").style.display = "block";

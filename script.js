@@ -1,4 +1,4 @@
-const password1 = "passwort";  // First password for the riddle page
+const password1 = "liebdichmehr123";  // First password for the riddle page
 const password2 = "dich";  // Second password for a different page
 const correctAnswer = "b";  // The correct answer for the riddle (room B)
 
