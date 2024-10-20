@@ -1,5 +1,5 @@
 const password1 = "liebdichmehr123";  // First password for the riddle page
-const password2 = "XLs50L";  // Second password for a different page
+const password2 = "XL50L";  // Second password for a different page
 const correctAnswer = "b";  // The correct answer for the riddle (room B)
 
 function checkPassword() {
