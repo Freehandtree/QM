@@ -15,7 +15,7 @@
 
     <script>
         // Set the target date and time you're counting down to
-        const targetDate = new Date('October 24, 2024 00:00:00').getTime();
+        const targetDate = new Date('October 23, 2024 00:00:00').getTime();
 
         // Update the countdown every second
         const countdownInterval = setInterval(function() {
@@ -31,7 +31,7 @@
             // If the countdown is over, display a message
             if (timeLeft <= 0) {
                 clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "Time's up!";
+                window.location.href = "PSW2.html";
             }
         }, 1000);
     </script>
