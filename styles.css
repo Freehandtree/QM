@@ -90,3 +90,12 @@ button:hover{
 p {
     font-size: 18px;
 }
+
+footer{
+    color:#866;
+    font-style: italic;
+    font-size: small;
+}
+bold{
+    font-weight: bold;
+}
